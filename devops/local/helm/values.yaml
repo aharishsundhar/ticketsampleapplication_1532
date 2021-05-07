@@ -54,20 +54,20 @@ service:
   ticketsample: 
     name: ticketsample
     type: NodePort
-    port: 8005
-    targetPort: 8005
+    port: 8026
+    targetPort: 8026
 
   typessample: 
     name: typessample
     type: NodePort
-    port: 8006
-    targetPort: 8006
+    port: 8027
+    targetPort: 8027
 
   severitysample: 
     name: severitysample
     type: NodePort
-    port: 8007
-    targetPort: 8007
+    port: 8028
+    targetPort: 8028
 
 
 deployment:
