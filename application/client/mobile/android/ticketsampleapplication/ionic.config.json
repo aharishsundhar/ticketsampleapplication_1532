@@ -1,0 +1,7 @@
+{
+  "name": "ticketsampleapplication",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
