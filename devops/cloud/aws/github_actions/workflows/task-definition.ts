@@ -114,9 +114,9 @@ module.exports = {
             ],
             "environmentFiles": null,
             "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@127.0.0.1:27017/ticketsampleapplication_1532?authSource=admin"},{"name":"CAMUNDAPOD_URL","value":"http://127.0.0.1:8080"},{"name":"SECURITYURL","value":"http://127.0.0.1:8003"},{"name":"AUTHPROXYURL","value":"http://127.0.0.1:8001"},{"name":"ADMINURL","value":"http://127.0.0.1:8004"},{"name":"CAMUNDAURL","value":"http://127.0.0.1:8002"},{"name":"APIGATEWAY","value":"http://127.0.0.1:8000"}
-            ,{"name":"TICKETSAMPLEURL","value":"http://127.0.0.1:8026"}
-            ,{"name":"TYPESSAMPLEURL","value":"http://127.0.0.1:8027"}
-            ,{"name":"SEVERITYSAMPLEURL","value":"http://127.0.0.1:8028"}
+            ,{"name":"TICKETSAMPLEURL","value":"http://127.0.0.1:8020"}
+            ,{"name":"TYPESSAMPLEURL","value":"http://127.0.0.1:8021"}
+            ,{"name":"SEVERITYSAMPLEURL","value":"http://127.0.0.1:8022"}
             ],
             "secrets": null,
             "mountPoints": [
@@ -286,9 +286,9 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8026",
+                    "containerPort": "8020",
                     "protocol": "tcp",
-                    "hostPort": "8026"
+                    "hostPort": "8020"
                 }
             ],
             "environmentFiles": null,
@@ -330,9 +330,9 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8027",
+                    "containerPort": "8021",
                     "protocol": "tcp",
-                    "hostPort": "8027"
+                    "hostPort": "8021"
                 }
             ],
             "environmentFiles": null,
@@ -374,9 +374,9 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8028",
+                    "containerPort": "8022",
                     "protocol": "tcp",
-                    "hostPort": "8028"
+                    "hostPort": "8022"
                 }
             ],
             "environmentFiles": null,

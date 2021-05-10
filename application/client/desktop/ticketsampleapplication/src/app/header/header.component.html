@@ -39,19 +39,15 @@ Home</a>
             </div>
             <div class="list-group panel" *ngIf='isAdminUser'><a class="list-group-item list-group-item-success" [routerLink]="['/admin']">{{'source.admin' | i18next}}</a>
             </div>
-            <div class="list-group panel" *ngIf="isApplicable('addedticket') && userId"> <a href="#ticketsample" class="list-group-item list-group-item-success"
-                data-toggle="collapse" data-parent="#MainMenu">ticketsample <i class="fa fa-caret-down"></i></a>
+            <div class="list-group panel" *ngIf="isApplicable('addseverity') && userId"> <a href="#severitysample" class="list-group-item list-group-item-success"
+                data-toggle="collapse" data-parent="#MainMenu">severitysample <i class="fa fa-caret-down"></i></a>
 
                 <div
-                class="collapse" id="ticketsample">
-<a class="list-group-item" [routerLink]="['/addedticket']">{{'source.addedticket' | i18next}}</a>
+                class="collapse" id="severitysample">
+<a class="list-group-item" [routerLink]="['/addseverity']">{{'source.addseverity' | i18next}}</a>
 
                     <a
-                    class="list-group-item" [routerLink]="['/allsticket']">{{'source.allsticket' | i18next}}</a>
-<a class="list-group-item" [routerLink]="['/modifydeleteticket']">{{'source.modifydeleteticket' | i18next}}</a>
-
-                        <a
-                        class="list-group-item" [routerLink]="['/searchupdatetickets']">{{'source.searchupdatetickets' | i18next}}</a>
+                    class="list-group-item" [routerLink]="['/allseverity']">{{'source.allseverity' | i18next}}</a>
             </div>
         </div>
         <div class="list-group panel" *ngIf="isApplicable('addtypes') && userId"> <a href="#typessample" class="list-group-item list-group-item-success"
@@ -65,15 +61,19 @@ Home</a>
                 class="list-group-item" [routerLink]="['/alltypes']">{{'source.alltypes' | i18next}}</a>
         </div>
     </div>
-    <div class="list-group panel" *ngIf="isApplicable('addseverity') && userId"> <a href="#severitysample" class="list-group-item list-group-item-success"
-        data-toggle="collapse" data-parent="#MainMenu">severitysample <i class="fa fa-caret-down"></i></a>
+    <div class="list-group panel" *ngIf="isApplicable('addedticket') && userId"> <a href="#ticketsample" class="list-group-item list-group-item-success"
+        data-toggle="collapse" data-parent="#MainMenu">ticketsample <i class="fa fa-caret-down"></i></a>
 
         <div
-        class="collapse" id="severitysample">
-<a class="list-group-item" [routerLink]="['/addseverity']">{{'source.addseverity' | i18next}}</a>
+        class="collapse" id="ticketsample">
+<a class="list-group-item" [routerLink]="['/addedticket']">{{'source.addedticket' | i18next}}</a>
 
             <a
-            class="list-group-item" [routerLink]="['/allseverity']">{{'source.allseverity' | i18next}}</a>
+            class="list-group-item" [routerLink]="['/allsticket']">{{'source.allsticket' | i18next}}</a>
+<a class="list-group-item" [routerLink]="['/modifydeleteticket']">{{'source.modifydeleteticket' | i18next}}</a>
+
+                <a
+                class="list-group-item" [routerLink]="['/searchupdatetickets']">{{'source.searchupdatetickets' | i18next}}</a>
     </div>
     </div>
     <div class="list-group panel"><a class="list-group-item list-group-item-success" *ngIf='userId!=null'
